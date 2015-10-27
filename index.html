@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Food tracker</title>
+</head>
+<body id="body">
+<header>
+    <h1>Food Tracker</h1>
+</header>
+<div id="note">
+    <div class="lines">
+	<span class="horizontal">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</span>
+	<span class="vertical">
+		<span></span>
+		<span></span>
+	</span>
+    </div>
+    <div class="sticky">
+        <div class="inner">
+            <span class="scratch"></span>
+            <div class="paper">
+                <form>
+                    Food Name:
+                    <input type="text" id="foodName">
+                    Description:
+                    <input type="text" id="description">
+                    Purchase Date:
+                    <input type='date' id="purchase">
+                    Expiration Date:
+                    <input type='date' id="expire">
+                </form>
+                <div id="buttonSpace"> <button onClick="newRow()">Button</button></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div id="data">
+    <div  class="tbl-header">
+    <table>
+        <thead>
+        <tr>
+            <th><strong> Food Name (What is it called?)</strong></th>
+            <th><strong> Description (Qualities) </strong></th>
+            <th><strong> Purchase Date (YYMMDD)</strong></th>
+            <th><strong>Expiration Date (YYMMDD)</strong></th>
+        </tr>
+        </thead>
+    </table>
+    </div>
+    <div  class="tbl-content">
+    <table id="myTable">
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
