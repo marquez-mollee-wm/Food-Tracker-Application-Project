@@ -29,13 +29,17 @@ function newRow (){
 
 
 
+}
 
 
+function expired(){
 
+    var currentDate = new Date();
+    var expiration = document.getElementById("expire").parse;
 
-
-
+    if (currentDate > expiration){
+        expire.style.backgroundColor= "red";
+    }
 
 
 }
-
