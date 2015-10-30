@@ -23,17 +23,12 @@ function newRow (){
 
      var expire = document.getElementById("expire").value;
     var newContent4 = document.createTextNode(expire);
+    var newClass= document.getElementById("expire");
+    cell4.setAttribute('class',newClass);
     cell4.appendChild(newContent4);
 
 
-}
 
-var expire = document.getElementById("expire").value;
-var expiration = new Date().parse(expire);
-var currentDate = new Date();
-
-if(expiration < currentDate){
-    document.getElementById("expire").style.backgroundColor="red"
 }
 
 
@@ -69,7 +64,7 @@ function expired () {
                 }
                 date4 = year + "-" + month + "-" + day;
                 var doc3 = document.getElementById("myTable").innerHTML;
-                var doc4 = doc3.replace("<td>" + date4 + "</td>", "<td>." + date4 + "</td>");
+                var doc4 = doc3.replace('<td class="[object HTMLInputElement]">' + date4 + "</td>","<td>" + date4 + "</td>");
                 document.getElementById("myTable").innerHTML = doc4;
                 day = day - 1;
                 day = day + 2;
@@ -94,7 +89,7 @@ function expired () {
                 }
                 var date2 = year2 + "-" + month3 + "-" + day2;
                 var doc1 = document.getElementById("myTable").innerHTML;
-                var doc2 = doc1.replace("<td>" + date2 + "</td>", "<td id='haha'> EXPIRED </td>");
+                var doc2 = doc1.replace('<td class="[object HTMLInputElement]">' + date2 + "</td>", "<td id='haha'> EXPIRED </td>");
                 document.getElementById("myTable").innerHTML = doc2;
                 day2 = day2 - 1;
             }
