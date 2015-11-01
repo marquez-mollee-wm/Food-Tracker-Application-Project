@@ -101,7 +101,7 @@
     box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
-
+/*start of table*/
 #data{
     padding: 20px;
 }
@@ -115,7 +115,7 @@ table{
     background-color: rgba(87, 173, 207, 0.56);
 }
 .tbl-content{
-    height:220px;
+    height:300px;
     overflow-x:auto;
     margin-top: 0;
     border: 6px solid rgba(87, 173, 207, 0.56);
@@ -139,6 +139,7 @@ td{
     color: black;
     background-color: #6d206b;
     opacity: .6;
+    height: 30px;
 
 }
 
@@ -160,5 +161,10 @@ body{
 header{
     float: right;
     font-size: 45px;
+    position: absolute;
+    right: 20%;
+}
 
+#haha {
+    background-color: #d70019;
 }

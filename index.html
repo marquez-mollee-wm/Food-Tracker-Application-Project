@@ -40,7 +40,8 @@
                     Expiration Date:
                     <input type='date' id="expire">
                 </form>
-                <div id="buttonSpace"> <button onClick="newRow()">Button</button></div>
+                <button onClick="newRow()">Add</button>
+                <button onclick="expired()">Check for expired food</button>
             </div>
         </div>
     </div>
@@ -53,26 +54,25 @@
 
 <div id="data">
     <div  class="tbl-header">
-    <table>
-        <thead>
-        <tr>
-            <th><strong> Food Name (What is it called?)</strong></th>
-            <th><strong> Description (Qualities) </strong></th>
-            <th><strong> Purchase Date (YYMMDD)</strong></th>
-            <th><strong>Expiration Date (YYMMDD)</strong></th>
-        </tr>
-        </thead>
-    </table>
+        <table>
+            <thead>
+            <tr>
+                <th><strong> Food Name (What is it called?)</strong></th>
+                <th><strong> Description (Qualities) </strong></th>
+                <th><strong> Purchase Date (YYMMDD)</strong></th>
+                <th><strong>Expiration Date (YYMMDD)</strong></th>
+            </tr>
+            </thead>
+        </table>
     </div>
     <div  class="tbl-content">
-    <table id="myTable">
-        <tbody>
+        <table id="myTable">
+            <tbody>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
     </div>
 </div>
-<div><button onClick="expired()">Button</button></div>
 
 
 
